@@ -142,7 +142,7 @@ main div img{
 }
 
 .card {
-    padding: 0;
+    padding: 0px;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
     background-color: #91B4A3;
@@ -175,7 +175,7 @@ main div img{
  }
 
 /* overlay */
-.container{
+ .container{
   position: relative;
 }
 
@@ -186,7 +186,7 @@ main div img{
 }
 
 .overlay {
-  border-radius: 16px;
+    border-radius: 16px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -201,10 +201,6 @@ main div img{
 
 .container:hover .overlay {
   height: 90%;
-}
-
-.container:hover {
-  background-color:#4C7355;
 }
 
 .text {
