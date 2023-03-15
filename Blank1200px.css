@@ -19,7 +19,7 @@ header {
 }
 header img {
   padding: 10px;
-  margin: 20px;
+  margin: 1%;
   border-radius: 45px;
   text-align: center;
   padding: 0px;
@@ -46,7 +46,7 @@ main h2 {
 main img {
   grid-column: span 1;
   padding: 0px;
-  margin-left: 25%;
+  margin-left: 1%;
 }
 #text {
   grid-column: span 2;
@@ -54,13 +54,14 @@ main img {
 
 nav {
   grid-column: span 9;
+  position:relative; left:-25px; top:2px;
 }
 nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 list-style-type: none;
-margin: auto;
-width: 75%;
+margin: 0px;
+width: 105%;
 padding: 0px;
 }
 nav li {
@@ -69,7 +70,7 @@ line-height: 123px;
 text-align: center;
 font-family: century-gothic,sans-serif;
 font-weight: 700;
-font-size: 53px;
+font-size: 52px;
 font-style: normal;
 display: inline-block;
 font-weight: bold;
@@ -79,7 +80,7 @@ nav li a {
 background-color: #BAD1C6;
 color:#799A81;
 display: block;
-padding: 10px;
+padding: 20px;
 text-decoration: none;
 transition: background-color 1.0s, width 1.0s, color 1.0s;
 width: auto;
