@@ -63,8 +63,8 @@ body {
     --card_width: 360px;
     --row_increment: auto;
     --card_border_radius: 16px;
-    --card_xsmall: 22;
-    --card_small: 20;
+    --card_xsmall: 16;
+    --card_small: 18;
     --card_medium: 28;
     --card_large: 40;
 }
