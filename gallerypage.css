@@ -117,7 +117,7 @@ a {
 /* s1 */
 .slide1{
   position: absolute;
-  opacity: 0;
+  opacity: 1;
 }
 
 .card_img {
@@ -169,14 +169,14 @@ a {
 
 .slide2 {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
 }
 
 .lamps_img {
   position: absolute;
   width: 450px;
   height: auto;
-  top: 55%;
+  top: 155%;
   left: 1%;
 }
 
@@ -184,6 +184,7 @@ a {
   position: absolute;
   width: 550px;
   height: auto;
+  top: 200%;
   left: 35%;
 }
 
@@ -191,15 +192,17 @@ a {
   position: absolute;
   width: 350px;
   height: auto;
-  top: 52%;
+  top: 152%;
   right: 1%
 }
+
+/*slide 3  */
 
 .pb_img {
   position: absolute;
   width: 500px;
   height: auto;
-  top: 55%;
+  top: 255%;
   left: 1%;
 }
 
@@ -207,7 +210,7 @@ a {
   position: absolute;
   width: 300px;
   height: auto;
-  top: 70%;
+  top: 270%;
   left: 35%;
 }
 
@@ -215,7 +218,7 @@ a {
   position: absolute;
   width: 550px;
   height: auto;
-  top: 50%;
+  top: 250%;
   right: 1%
 }
 
