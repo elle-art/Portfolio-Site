@@ -19,122 +19,164 @@ header {
 }
 header img {
   padding: 10px;
-  margin: 1%;
-  border-radius: 45px;
+  border-radius: 25px;
   text-align: center;
   padding: 0px;
-}
-main {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 40px;
-  grid-column: span 9;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  font-family: century-gothic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #5A5A5A;
-}
-main h2 {
-  border-bottom: 4px solid #5A5A5A;
-  font-family: century-gothic,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #5A5A5A;
-}
-main img {
-  grid-column: span 1;
-  padding: 0px;
-  margin-left: 1%;
-}
-#text {
-  grid-column: span 2;
+  width: 50%;
+  max-width: 1750px;
 }
 
 nav {
   grid-column: span 9;
   position:relative; 
-  top:2px;
+  top: 0.75em;
+  margin-left: -20px;
 }
 nav ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-list-style-type: none;
-margin: 0px;
-width: 100%;
-padding: 0px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  list-style-type: none;
+  width: 95%;
+  padding: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 nav ul li {
-vertical-align: middle;
-line-height: 123px;
-text-align: center;
-font-family: century-gothic,sans-serif;
-font-weight: 700;
-font-size: 52px;
-font-style: normal;
-display: inline-block;
-font-weight: bold;
-margin: 40px;
+  vertical-align: middle;
+  line-height: 80px;
+  text-align: center;
+  font-family: century-gothic,sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  font-style: normal;
+  display: inline-block;
+  font-weight: bold;
+  border: red 1px solid;
+
 }
 nav ul li a {
-background-color: #BAD1C6;
-color:#799A81;
-display: block;
-padding: 20px;
-text-decoration: none;
-transition: background-color 1.0s, width 1.0s, color 1.0s;
-width: auto;
-height: 123px;
-border-radius: 40px;
+  background-color: #BAD1C6;
+  color:#799A81;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-color 1.0s, width 1.0s, color 1.0s;
+  margin: -20px;
+  height: 80px;
+  border-radius: 25px;
+  max-width: 400px;
+}
+nav ul li a img {
+  width: 100px;
 }
 nav ul li a:hover {
 background-color: #91B4A3;
 color: #4C7355
 }
 
-.circle {
-  padding: 10px;
-  width: 325px;
-  height: 325px;
-  border-radius: 500px;
+#socials {
+  font-size: 3em;
+  text-align: center;
+  grid-column: span 3;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 4%;
 }
 
-#socials {
-font-size: 100px;
-text-align: center;
-grid-column: span 3;
+@media (min-width: 480px) {
+  header img {
+    border-radius: 20px;
+  }
+
+  nav{
+    margin-left: -20px;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 1.5rem;
+    grid-column-gap: 3em;
+  }
+
+  nav ul li {
+    line-height: 70px;
+    font-size: 1.1em;
+  }
+
+  nav ul li a {
+    border-radius: 20px;
+    width: 110%;
+    height: 70px;
+    max-width: 300px;
+  }
 }
+
+@media (min-width: 725px) {
+  nav ul {
+    grid-column-gap: 3em;
+  }
+
+  nav ul li {
+    line-height: 90px;
+    font-size: 1.5em;
+  }
+  nav ul li a {
+    height: 90px;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav{
+    margin-left: -50px;
+  }
+
+  #socials {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1500px) {
+  nav{
+    margin-left: -70px;
+  }
+
+  nav ul li {
+    line-height: 120px;
+    font-size: 2em;
+  }
+
+  nav ul li a {
+    height: 120px;
+    max-width: 550px;
+  }
+
+  #socials {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 1500px) {
+  nav ul li a {
+    height: 120px;
+    width: 100%;
+    max-width: 750px;
+  }
+}
+
+main {
+  grid-column: span 9;
+}
+
 aside a {
-color: #BAD1C6;
+  color: #BAD1C6;
 }
 aside a:hover {
-color: #91B4A3;
-transition: background-color 1.0s, width 1.0s, color 1.0s;
+  color: #91B4A3;
+  transition: background-color 1.0s, width 1.0s, color 1.0s;
 }
 
-ul {
-list-style-type: none;
-margin: 0px;
-padding: 0px;
-}
-ul li {
-vertical-align: middle;
-text-align: right;
-font-family: century-gothic,sans-serif;
-font-weight: 700;
-font-size: 20px;
-font-style: normal;
-font-weight: bold;
-margin: 20px;
-}
-ul li a {
-color:#799A81;
-padding: 20px;
-text-decoration: none;
-transition: background-color 1.0s, width 1.0s, color 1.0s;
-width: auto;
-}
-ul li a:hover {
-color: #4C7355
-}
