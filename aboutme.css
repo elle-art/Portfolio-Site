@@ -1,12 +1,12 @@
 body {
-  background-color: #E1E6E4;
+  background-color: #e1e6e4;
 }
 
 #wrapper {
   margin: 24px auto;
   width: auto;
   padding: 24px;
-  background-color: #E1E6E4;
+  background-color: #e1e6e4;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-column-gap: 12px;
@@ -18,7 +18,7 @@ header {
   grid-column: span 9;
 }
 
-nav ul a img{
+nav ul a img {
   width: 100%;
   margin-top: 20%;
   margin-left: 15px;
@@ -28,7 +28,7 @@ nav ul a img{
 
 nav {
   grid-column: span 9;
-  position:relative; 
+  position: relative;
   margin-left: -20px;
 }
 
@@ -45,27 +45,27 @@ nav ul li {
   vertical-align: middle;
   line-height: 50px;
   text-align: center;
-  font-family: century-gothic,sans-serif;
+  font-family: century-gothic, sans-serif;
   font-weight: 700;
-  font-size: .6em;
+  font-size: 0.6em;
   font-style: normal;
   display: inline-block;
 }
 nav ul li a {
-  background-color: #BAD1C6;
-  color:#799A81;
+  background-color: #bad1c6;
+  color: #799a81;
   display: block;
   padding: 5px;
   text-decoration: none;
-  transition: background-color 1.0s, width 1.0s, color 1.0s;
+  transition: background-color 1s, width 1s, color 1s;
   width: 160%;
   border-radius: 10px;
   max-width: 120px;
   height: 50px;
 }
 nav li a:hover {
-  background-color: #91B4A3;
-  color: #4C7355
+  background-color: #91b4a3;
+  color: #4c7355;
 }
 
 .circle {
@@ -87,18 +87,18 @@ nav li a:hover {
   margin-right: 20%;
 }
 aside a {
-  color: #BAD1C6;
+  color: #bad1c6;
 }
 aside a:hover {
-  color: #91B4A3;
-  transition: background-color 1.0s, width 1.0s, color 1.0s;
+  color: #91b4a3;
+  transition: background-color 1s, width 1s, color 1s;
 }
 
 ul li {
   vertical-align: middle;
   text-align: right;
   list-style-type: none;
-  font-family: century-gothic,sans-serif;
+  font-family: century-gothic, sans-serif;
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -106,14 +106,14 @@ ul li {
   margin: 20px;
 }
 ul li a {
-  color:#799A81;
+  color: #799a81;
   padding: 20px;
   text-decoration: none;
-  transition: background-color 1.0s, width 1.0s, color 1.0s;
+  transition: background-color 1s, width 1s, color 1s;
   width: auto;
 }
 ul li a:hover {
-  color: #4C7355
+  color: #4c7355;
 }
 
 main {
@@ -126,18 +126,18 @@ main {
   grid-template-rows: repeat(2, 1fr);
   font-family: century-gothic, sans-serif;
   font-weight: 400;
-  font-size: .75em;
+  font-size: 0.75em;
   font-style: normal;
-  color: #5A5A5A;
-  border: #799A81 solid 3px;
+  color: #5a5a5a;
+  border: #799a81 solid 3px;
 }
 
 main h2 {
-  border-bottom: 4px solid #5A5A5A;
-  font-family: century-gothic,sans-serif;
+  border-bottom: 4px solid #5a5a5a;
+  font-family: century-gothic, sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #5A5A5A;
+  color: #5a5a5a;
 }
 
 main img {
@@ -160,7 +160,7 @@ main img {
 
 @media (min-width: 450px) {
   nav ul li {
-    font-size: .75em;
+    font-size: 0.75em;
     line-height: 50px;
   }
 
@@ -183,17 +183,17 @@ main img {
   }
 
   #text2 {
-    margin-top: -90px;;
+    margin-top: -90px;
   }
 }
 
-@media (min-width: 650px) { 
-  .circle{ 
+@media (min-width: 650px) {
+  .circle {
     position: relative;
     opacity: 100%;
-    }
+  }
 
-  nav ul a img{
+  nav ul a img {
     width: 150px;
     margin-top: 12%;
     margin-left: 25%;
@@ -228,7 +228,7 @@ main img {
   #text2 {
     margin-top: -8%;
   }
-  nav ul a img{
+  nav ul a img {
     width: 170px;
     height: 100px;
     margin-top: 10%;
@@ -247,10 +247,9 @@ main img {
 }
 
 @media (min-width: 900px) {
-  nav ul a img{
+  nav ul a img {
     width: 200px;
     max-width: 200px;
-
   }
   nav ul li a {
     max-width: 200px;
@@ -268,7 +267,7 @@ main img {
   #text2 {
     margin-top: -2%;
   }
-  nav ul a img{
+  nav ul a img {
     margin-top: 8%;
   }
   nav ul li {
@@ -284,7 +283,7 @@ main img {
     font-size: 1.75em;
   }
 
-  .circle { 
+  .circle {
     margin-left: 5%;
   }
 
@@ -296,7 +295,7 @@ main img {
     margin-top: -5%;
   }
 
-  nav ul a img{
+  nav ul a img {
     width: 250px;
     max-width: 250px;
     margin-top: 6%;
@@ -308,7 +307,7 @@ main img {
 }
 
 @media (min-width: 1325px) {
-  nav ul a img{
+  nav ul a img {
     width: 300px;
     max-width: 300px;
     padding-right: 20px;
@@ -321,7 +320,7 @@ main img {
 }
 
 @media (min-width: 1440px) {
-  nav ul a img{
+  nav ul a img {
     width: 350px;
     max-width: 350px;
     padding-right: 40px;
@@ -341,7 +340,7 @@ main img {
 }
 
 @media (min-width: 1800px) {
-  nav ul a img{
+  nav ul a img {
     width: 400px;
     max-width: 400px;
     margin-top: 4%;
@@ -364,7 +363,7 @@ main img {
 }
 
 @media (min-width: 2265px) {
-  nav ul a img{
+  nav ul a img {
     height: 120px;
   }
 
@@ -380,14 +379,13 @@ main img {
 }
 
 @media (min-width: 2500px) {
-  nav ul a img{
+  nav ul a img {
     margin-top: 3%;
   }
 
   nav ul li {
     font-size: 2em;
     margin-left: -95px;
-
   }
 
   nav ul li a {
@@ -397,7 +395,7 @@ main img {
 }
 
 @media (min-width: 2700px) {
-  nav ul a img{
+  nav ul a img {
     margin-top: 3%;
     height: 150px;
     max-width: 500px;
@@ -407,7 +405,7 @@ main img {
   nav ul li {
     font-size: 2.5em;
     margin-left: -75px;
-    line-height: 150px
+    line-height: 150px;
   }
 
   nav ul li a {
