@@ -75,6 +75,7 @@
               src="gallery_imgs/code_frame.png"
               alt="Golden frame"
             />
+          <div id="fixedFrame">
             <div class="wrap2" id="wrapCali">
               <iframe
                 src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
@@ -100,9 +101,10 @@
               <iframe
                 src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
                 frameborder="0"
-                id="default"
+                id="train"
                 title="trains CSS animation"
               ></iframe>
+            </div>
             </div>
           </div>
 
@@ -299,6 +301,7 @@
           <a id="audio"><h2>Audio</h2></a>
           <script>
             let audio = new Audio("gallery_imgs/audio/recomp.mp3");
+            audio.load();
 
             function playRecomp() {
               if (!audio.paused) {
@@ -318,6 +321,7 @@
             src="gallery_imgs/audio_tablet.png"
             class="tablet1"
             alt="Stone tablet with play symbol"
+            title="Double click to play from start"
             onclick="playRecomp()"
             ondblclick="startOverRecomp()"
           />
@@ -346,6 +350,7 @@
 
           <script>
             let audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
+            audio2.load();
 
             function playSFX() {
               if (!audio2.paused) {
@@ -366,6 +371,7 @@
             src="gallery_imgs/audio_tablet.png"
             class="tablet2"
             alt="Stone tablet with play symbol"
+            title="Double click to play from start"
             onclick="playSFX()"
             ondblclick="startOverSFX()"
           />

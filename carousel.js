@@ -193,10 +193,13 @@ function hideCodeElements(frame) {
     document.getElementById("description1").style.zIndex = "-2";
   }
   if (frame == "bloom" || frame == "wrapBloom") {
+    document.getElementById("wrapBloom").style.opacity = "0";
+    document.getElementById("bloom").style.opacity = "0";
+    document.getElementById("wrapBloom").style.zIndex = "-2";
     document.getElementById("description2").style.opacity = "0";
     document.getElementById("description2").style.zIndex = "-2";
   }
-  if (frame == "default") {
+  if (frame == "train") {
     document.getElementById("description3").style.opacity = "0";
     document.getElementById("description3").style.zIndex = "-2";
   }
@@ -209,6 +212,8 @@ function setCodeFrame(frame) {
   }
 
   //Code descriptions
+  var descriptionClass = document.getElementsByClassName("description");
+
   if (frame == "cali") {
     document.getElementById("description1").style.opacity = "1";
     document.getElementById("description1").style.zIndex = "1";
@@ -220,7 +225,7 @@ function setCodeFrame(frame) {
     document.getElementById("description2").style.opacity = "1";
     document.getElementById("description2").style.zIndex = "1";
   }
-  if (frame == "default") {
+  if (frame == "train") {
     document.getElementById("description3").style.opacity = "1";
     document.getElementById("description3").style.zIndex = "1";
   }
@@ -283,7 +288,7 @@ function get(btn, e1, e2, e3, top) {
 function getCali() {
   setBtn("btn1");
   hideCodeElements("wrapBloom");
-  hideCodeElements("default");
+  hideCodeElements("train");
   setCodeFrame("cali");
 }
 
@@ -293,7 +298,7 @@ button.addEventListener("click", getCali);
 function getBloom() {
   setBtn("btn2");
   hideCodeElements("cali");
-  hideCodeElements("default");
+  hideCodeElements("train");
   setCodeFrame("bloom");
 }
 
@@ -304,7 +309,7 @@ function getTrains() {
   setBtn("btn3");
   hideCodeElements("cali");
   hideCodeElements("bloom");
-  setCodeFrame("default");
+  setCodeFrame("train");
 }
 
 var button = document.getElementById("btn3");
