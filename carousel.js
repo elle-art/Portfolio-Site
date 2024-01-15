@@ -6,7 +6,6 @@ var images = new Array()
 				}
 			}
 			preload(
-				"gallery_imgs\pedestal.png",
 				"gallery_imgs\code_frame.png",
 				"gallery_imgs\audio_tablet.png",
         "gallery_imgs\profile_img.png",
