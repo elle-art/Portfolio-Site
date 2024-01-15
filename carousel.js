@@ -1,3 +1,33 @@
+var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"gallery_imgs\pedestal.png",
+				"gallery_imgs\code_frame.png",
+				"gallery_imgs\audio_tablet.png",
+        "gallery_imgs\profile_img.png",
+        "gallery_imgs\design\banner_frame.png",
+        "gallery_imgs\design\postcard_frame.png",
+        "gallery_imgs\design\rsos_frame.png",
+        "gallery_imgs\design\sza_frame.png",
+        "gallery_imgs\crafts\cover_frame.png",
+        "gallery_imgs\crafts\lamps_frame.png",
+        "gallery_imgs\crafts\mtray_frame.png",
+        "gallery_imgs\crafts\pb_frame.png",
+        "gallery_imgs\crafts\plant_frame.png",
+        "gallery_imgs\crafts\pooltray_frame.png",
+        "gallery_imgs\crafts\pumpkins_frame.png",
+        "gallery_imgs\crafts\room_frame.png",
+        "gallery_imgs\crafts\sc_frame.png",
+        "gallery_imgs\crafts\shelf_frame.png",
+        "gallery_imgs\crafts\tarot_frame.png",
+        "gallery_imgs\crafts\trash_frame.png"
+			)
+
 // Hover-Carousel component
 // By Yair Even-Or
 // written in jQuery 2013 -> refactored to vanilla 2020
@@ -325,4 +355,3 @@ document.addEventListener("DOMContentLoaded", function () {
     hiddenMenu.style.transform = `translateY(${scrollY}px)`;
   });
 });
-

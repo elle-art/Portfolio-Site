@@ -20,6 +20,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="preload" href="https://elle-art.github.io/CTK302/Unit1/mp1/index.html" as="document">
+    <link rel="preload" href="https://elle-art.github.io/CTK302/Unit3/mp3/index.html" as="document">
+    <link rel="preload" href="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html" as="document">
+    <link rel="preload" href="gallery_imgs/video/grave_frame.mp4" as="document">
+    <link rel="preload" href="gallery_imgs/video/desert_frame.mp4" as="document">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
@@ -75,36 +80,36 @@
               src="gallery_imgs/code_frame.png"
               alt="Golden frame"
             />
-          <div id="fixedFrame">
-            <div class="wrap2" id="wrapCali">
-              <iframe
-                src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
-                scrolling="no"
-                frameborder="0"
-                id="cali"
-                title="Cali JS code"
-              ></iframe>
-            </div>
-            <div class="wrap2" id="wrapBloom">
-              <svg width="700" height="800">
-                <rect width="700" height="400" style="fill: #afdaed" />
-              </svg>
-              <iframe
-                src="https://elle-art.github.io/CTK302/Unit3/mp3/index.html"
-                scrolling="no"
-                frameborder="0"
-                id="bloom"
-                title="bloom JS code"
-              ></iframe>
-            </div>
-            <div class="wrap2">
-              <iframe
-                src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
-                frameborder="0"
-                id="train"
-                title="trains CSS animation"
-              ></iframe>
-            </div>
+            <div id="fixedFrame">
+              <div class="wrap2" id="wrapCali">
+                <iframe
+                  src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
+                  scrolling="no"
+                  frameborder="0"
+                  id="cali"
+                  title="Cali JS code"
+                ></iframe>
+              </div>
+              <div class="wrap2" id="wrapBloom">
+                <svg width="700" height="800">
+                  <rect width="700" height="400" style="fill: #afdaed" />
+                </svg>
+                <iframe
+                  src="https://elle-art.github.io/CTK302/Unit3/mp3/index.html"
+                  scrolling="no"
+                  frameborder="0"
+                  id="bloom"
+                  title="bloom JS code"
+                ></iframe>
+              </div>
+              <div class="wrap2">
+                <iframe
+                  src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
+                  frameborder="0"
+                  id="train"
+                  title="trains CSS animation"
+                ></iframe>
+              </div>
             </div>
           </div>
 
@@ -314,6 +319,11 @@
               audio.load();
               audio.play();
             }
+
+            jQuery(window).on("load", function () {
+              audioPlay();
+              ballSeek();
+            });
           </script>
 
           <input
@@ -349,7 +359,7 @@
           </div>
 
           <script>
-            let audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
+            audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
             audio2.load();
 
             function playSFX() {
@@ -357,13 +367,13 @@
                 audio2.pause();
               } else {
                 audio2.play();
+                audioPlay("audio2");
               }
             }
-              function startOverSFX() {
+            function startOverSFX() {
               audio2.load();
               audio2.play();
             }
-            
           </script>
 
           <input
@@ -380,6 +390,7 @@
             class="pedestal2"
             alt="Stone pedestal"
           />
+
           <div class="descriptionB">
             <h3>SFX Narrative</h3>
             <p>
