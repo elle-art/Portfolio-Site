@@ -180,14 +180,17 @@ function setBtn(btn) {
   if (btn == "btn1") {
     document.getElementById("btn2").style.backgroundColor = "#867d6e";
     document.getElementById("btn3").style.backgroundColor = "#867d6e";
+    setParagraphs('btn1');
   }
   if (btn == "btn2") {
     document.getElementById("btn1").style.backgroundColor = "#867d6e";
     document.getElementById("btn3").style.backgroundColor = "#867d6e";
+    setParagraphs('btn2');
   }
   if (btn == "btn3") {
     document.getElementById("btn2").style.backgroundColor = "#867d6e";
     document.getElementById("btn1").style.backgroundColor = "#867d6e";
+    setParagraphs('btn3');
   }
 
   if (btn == "dot1") {
@@ -216,102 +219,101 @@ function hideCodeElements(frame) {
     document.getElementById(frame).style.opacity = "0";
     document.getElementById(frame).style.zIndex = "-2";
 
-  //Code descriptions
-  if (frame == "cali") {
-    document.getElementById("description1").style.opacity = "0";
-    document.getElementById("description1").style.zIndex = "-2";
-  }
   if (frame == "bloom" || frame == "wrapBloom") {
-    document.getElementById("wrapBloom").style.opacity = "0";
-    document.getElementById("bloom").style.opacity = "0";
-    document.getElementById("wrapBloom").style.zIndex = "-2";
-    document.getElementById("description2").style.opacity = "0";
-    document.getElementById("description2").style.zIndex = "-2";
+   document.getElementById("wrapBloom").style.opacity = "0";
+     document.getElementById("bloom").style.opacity = "0";
+     document.getElementById("wrapBloom").style.zIndex = "-2";
+
   }
-  if (frame == "train") {
-    document.getElementById("description3").style.opacity = "0";
-    document.getElementById("description3").style.zIndex = "-2";
-  }
+
 }
 
 function setCodeFrame(frame) {
   if (document.getElementById(frame).id == frame) {
     document.getElementById(frame).style.opacity = "1";
-    document.getElementById(frame).style.zIndex = "1";
+    document.getElementById(frame).style.zIndex = "2";
   }
 
-  //Code descriptions
-  var descriptionClass = document.getElementsByClassName("description");
-
-  if (frame == "cali") {
-    document.getElementById("description1").style.opacity = "1";
-    document.getElementById("description1").style.zIndex = "1";
-  }
   if (frame == "bloom" || frame == "wrapBloom") {
     document.getElementById("wrapBloom").style.opacity = "1";
-    document.getElementById("bloom").style.opacity = "1";
-    document.getElementById("wrapBloom").style.zIndex = "1";
-    document.getElementById("description2").style.opacity = "1";
-    document.getElementById("description2").style.zIndex = "1";
-  }
-  if (frame == "train") {
-    document.getElementById("description3").style.opacity = "1";
-    document.getElementById("description3").style.zIndex = "1";
+   document.getElementById("bloom").style.opacity = "1";
+     document.getElementById("wrapBloom").style.zIndex = "1";
   }
 }
 
-function hideDesignElements(slide) {
-  document.getElementById(slide).style.opacity = "0";
-  document.getElementById(slide).style.zIndex = "-2";
+function setParagraphs(btn) {
+  let link = document.querySelector('#code_link');
 
-    //Design descriptions
-    if (slide == "d1") {
-      document.getElementById("d1_desc").style.opacity = "0";
-      document.getElementById("d1_desc").style.zIndex = "-2";
-    }
-    if (slide == "d2") {
-      document.getElementById("d2_desc").style.opacity = "0";
-      document.getElementById("d2_desc").style.zIndex = "-2";
-    }
-    if (slide == "d3") {
-      document.getElementById("d3_desc").style.opacity = "0";
-      document.getElementById("d3_desc").style.zIndex = "-2";
-    }
-    if (slide == "d4") {
-      document.getElementById("d4_desc").style.opacity = "0";
-      document.getElementById("d4_desc").style.zIndex = "-2";
-    }
+  if(btn=='btn1') {
+    document.getElementById('disclaimer').innerText =" ";
+    document.getElementById('code_h3').innerText = 'Mp1: Caliente';
+    document.getElementById('code_h5').innerText = '(Click to animate)';
+    document.getElementById('code_p').innerText = "This is Cali...she's a bit of a hot head. Witness the magic of character creation through pure JavaScript elements. No images, just several lines of code create the character, Cali, and the destruction she leaves in her wake. Every detail is meticulously crafted using code.";
+    link.href = "https://elle-art.github.io/CTK302/Unit1/mp1/index.html";
+  }
+  if(btn=='btn2') {
+    document.getElementById('disclaimer').innerText =" ";
+    document.getElementById('code_h3').innerText = 'Mp3: Bloom';
+    document.getElementById('code_h5').innerText = '(Use left and right arrow keys to move)';
+    document.getElementById('code_p').innerText = "Bloom into a JavaScript gaming experience! Collect water droplets to nurture the flower atop your character's head. Hand-drawn assets, including characters and water droplets, add an authentic charm, each drawn with Sharpie on notebook paper, creating a uniquely personalized aesthetic.";
+    link.href = "https://elle-art.github.io/CTK302/Unit3/mp3/index.html";
+  }
+  if(btn=='btn3') {
+    document.getElementById('disclaimer').innerText =" ";
+    document.getElementById('code_h3').innerText = 'CSS Animation: Trains';
+    document.getElementById('code_h5').innerText = '(Scroll and hover)';
+    document.getElementById('code_p').innerText = "Explore the benefits of public transportation while CSS animations craft a visually compelling experience. The GIFs, sourced from the web, influinced the vibrant and futuristic colar scheme. Notable features include a hover-triggered animated pie chart that represents key data and a timed animation at the bottom, offering an engaging user experience. This project not only demonstrates the power of CSS animations, but also promotes public transportation through an aesthetically pleasing and interactive lens.";
+    link.href = "https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html";
+  }
+  if(btn=='dot1') {
+    document.getElementById('design_h3').innerText = 'Bonfire';
+    document.getElementById('design_h4').innerText = 'Interactive App Mockup - Honors Contract';
+    document.getElementById('designP').innerText = 'Join the Bonfire! This app unifies communities by highlighting local buisnesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself'; }
+  if(btn=='dot2') {
+    document.getElementById('design_h3').innerText = 'Plantfolio';
+    document.getElementById('design_h4').innerText = 'Landing Page - Composition and Design';
+    document.getElementById('designP').innerText = 'Learn all about plants with Plantfolio, a plant encyclopedia! This captivating landing page, designed inAdobe InDesign, offers a glimpse into a user-friendly and visually appealing platform for exploring the wonderous world of plants.'; }
+    if(btn=='dot3') {
+      document.getElementById('design_h3').innerText = 'Welcome Week 2023';
+      document.getElementById('design_h4').innerText = 'Facebook Banner - Social Media';
+      document.getElementById('designP').innerText = 'This Facebook banner was designed for ISU Welcome Week 2023. Designed to capture the essence of campus life, it serves as a visual gateway to a week filled with excitement, collaboration, and the spirit of ISU, setting the tone for a great start to a new school year!'; }
+      if(btn=='dot4') {
+        document.getElementById('design_h3').innerText = 'Recruitment Postcards';
+        document.getElementById('design_h4').innerText = 'Postcards - Social Media';
+        document.getElementById('designP').innerText = ' As part of my job with the School of IT at ISU, I designed mockups for recruitment postcards. These visual representations not only show the proud acheivements of the School of IT but also serve as compelling invitations to prospective students.'; }
 }
 
-function setDesignFrame(slide) {
-  document.getElementById(slide).style.opacity = "1";
-  document.getElementById(slide).style.zIndex = "1";
-
-    //Design descriptions
-    if (slide == "d1") {
-      document.getElementById("d1_desc").style.opacity = "1";
-      document.getElementById("d1_desc").style.zIndex = "1";
-    }
-    if (slide == "d2") {
-      document.getElementById("d2_desc").style.opacity = "1";
-      document.getElementById("d2_desc").style.zIndex = "1";
-    }
-    if (slide == "d3") {
-      document.getElementById("d3_desc").style.opacity = "1";
-      document.getElementById("d3_desc").style.zIndex = "1";
-    }
-    if (slide == "d4") {
-      document.getElementById("d4_desc").style.opacity = "1";
-      document.getElementById("d4_desc").style.zIndex = "1";
-    }
+function setImages(btn) {
+  let image = document.querySelector('#design_img');
+  let link = document.querySelector('#bonfire_link');
+if(btn == 'dot2' || 'dot3' || 'dot4') {
+  document.getElementById("bonfire_video").style.opacity = "0";
+  document.getElementById("bonfire_video").style.zIndex = "-2";
+}
+if(btn == 'dot1') {
+  image.setAttribute("src", 'gallery_imgs/design/bonfire_frame.png');
+  link.innerHTML = 'Open in browser';
+  document.getElementById("bonfire_video").style.opacity = "1";
+  document.getElementById("bonfire_video").style.zIndex = "1";
+}
+if(btn == 'dot2') {
+  image.setAttribute("src", 'gallery_imgs/design/plantfolio_ frame.png');
+  link.innerHTML = ' ';
+}
+if(btn == 'dot3') {
+  image.setAttribute("src", 'gallery_imgs/design/banner_frame.png');
+  link.innerHTML = ' ';
+}
+if(btn == 'dot4') {
+  image.setAttribute("src", 'gallery_imgs/design/postcard_frame.png');
+  link.innerHTML = ' ';
+}
 }
 
-function get(btn, e1, e2, e3, top) {
+function get(btn) {
   setBtn(btn);
-  hideDesignElements(e1);
-  hideDesignElements(e2);
-  hideDesignElements(e3);
-  setDesignFrame(top);
+  setParagraphs(btn);
+  setImages(btn);
 }
 
 function getCali() {

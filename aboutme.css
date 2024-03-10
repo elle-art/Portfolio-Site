@@ -69,14 +69,14 @@ nav li a:hover {
 }
 
 .circle {
-  position: absolute;
+  position: relative;
   padding: 20px;
   width: 300px;
   height: 300px;
   border-radius: 650px;
-  margin-top: -2%;
-  margin-left: -25px;
-  opacity: 0;
+  margin-top: 2%;
+  margin-bottom: -3%;
+  margin-right: 1%;
 }
 
 #socials {
@@ -117,13 +117,9 @@ ul li a:hover {
 }
 
 main {
-  padding: 0px;
+  padding: 40px;
   margin: 0px;
-  margin-top: 40px;
   grid-column: span 9;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   font-family: century-gothic, sans-serif;
   font-weight: 400;
   font-size: 0.75em;
@@ -141,21 +137,11 @@ main h2 {
 }
 
 main img {
-  grid-column: span 1;
-  padding: 0px;
-  margin-left: 1%;
-  margin-top: 15%;
+  float: left;
 }
 
 #text {
-  margin-top: 1%;
-  grid-column: span 3;
-}
-
-#text2 {
-  grid-column: span 3;
-  grid-row: 2;
-  margin-top: -115px;
+  text-align: justify;
 }
 
 @media (min-width: 450px) {
