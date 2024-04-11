@@ -262,17 +262,17 @@ function setParagraphs(btn) {
     document.getElementById('disclaimer').innerText =" ";
     document.getElementById('code_h3').innerText = 'CSS Animation: Trains';
     document.getElementById('code_h5').innerText = '(Scroll and hover)';
-    document.getElementById('code_p').innerText = "Explore the benefits of public transportation while CSS animations craft a visually compelling experience. The GIFs, sourced from the web, influinced the vibrant and futuristic colar scheme. Notable features include a hover-triggered animated pie chart that represents key data and a timed animation at the bottom, offering an engaging user experience. This project not only demonstrates the power of CSS animations, but also promotes public transportation through an aesthetically pleasing and interactive lens.";
+    document.getElementById('code_p').innerText = "Explore the benefits of public transportation while CSS animations craft a visually compelling experience. The GIFs, sourced from the web, influenced the vibrant and futuristic color scheme. Notable features include a hover-triggered animated pie chart that represents key data and a timed animation at the bottom, offering an engaging user experience. This project not only demonstrates the power of CSS animations but also promotes public transportation through an aesthetically pleasing and interactive lens.";
     link.href = "https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html";
   }
   if(btn=='dot1') {
     document.getElementById('design_h3').innerText = 'Bonfire';
     document.getElementById('design_h4').innerText = 'Interactive App Mockup - Honors Contract';
-    document.getElementById('designP').innerText = 'Join the Bonfire! This app unifies communities by highlighting local buisnesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself'; }
+    document.getElementById('designP').innerText = 'Join the Bonfire! This app unifies communities by highlighting local businesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself.'; }
   if(btn=='dot2') {
     document.getElementById('design_h3').innerText = 'Plantfolio';
     document.getElementById('design_h4').innerText = 'Landing Page - Composition and Design';
-    document.getElementById('designP').innerText = 'Learn all about plants with Plantfolio, a plant encyclopedia! This captivating landing page, designed inAdobe InDesign, offers a glimpse into a user-friendly and visually appealing platform for exploring the wonderous world of plants.'; }
+    document.getElementById('designP').innerText = 'Learn all about plants with Plantfolio, a plant encyclopedia! This captivating landing page, designed in Adobe InDesign, offers a glimpse into a user-friendly and visually appealing platform for exploring the wonderous world of plants.'; }
     if(btn=='dot3') {
       document.getElementById('design_h3').innerText = 'Welcome Week 2023';
       document.getElementById('design_h4').innerText = 'Facebook Banner - Social Media';
@@ -280,7 +280,7 @@ function setParagraphs(btn) {
       if(btn=='dot4') {
         document.getElementById('design_h3').innerText = 'Recruitment Postcards';
         document.getElementById('design_h4').innerText = 'Postcards - Social Media';
-        document.getElementById('designP').innerText = ' As part of my job with the School of IT at ISU, I designed mockups for recruitment postcards. These visual representations not only show the proud acheivements of the School of IT but also serve as compelling invitations to prospective students.'; }
+        document.getElementById('designP').innerText = ' As part of my job with the School of IT at ISU, I designed mockups for recruitment postcards. These visual representations not only show the proud achievements of the School of IT but also serve as compelling invitations to prospective students.'; }
 }
 
 function setImages(btn) {
