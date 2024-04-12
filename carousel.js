@@ -268,7 +268,7 @@ function setParagraphs(btn) {
   if(btn=='dot1') {
     document.getElementById('design_h3').innerText = 'Bonfire';
     document.getElementById('design_h4').innerText = 'Interactive App Mockup - Honors Contract';
-    document.getElementById('designP').innerText = 'Join the Bonfire! This app unifies communities by highlighting local businesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself.'; }
+    document.getElementById('designP').innerText = 'Join the Bonfire! This app unifies communities by highlighting local businesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself'; }
   if(btn=='dot2') {
     document.getElementById('design_h3').innerText = 'Plantfolio';
     document.getElementById('design_h4').innerText = 'Landing Page - Composition and Design';
