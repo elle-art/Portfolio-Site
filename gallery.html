@@ -22,6 +22,11 @@
     />
     <link
       rel="preload"
+      href="https://elle-art.github.io/ClassStar/"
+      as="document"
+    />
+    <link
+      rel="preload"
       href="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
       as="document"
     />
@@ -43,7 +48,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="carousel.js"></script>
+    <script src="gallerypage_functions.js"></script>
     <div id="wrapper">
       <header>
         <nav class="navbar navbar-expand-lg">
@@ -91,7 +96,16 @@
               alt="Golden frame"
             />
             <div id="fixedFrame">
-              <div class="wrap2" id="wrapCali">
+              <div class="wrap2" id="classStar">
+                <iframe
+                  src="https://elle-art.github.io/ClassStar/"
+                  scrolling="no"
+                  frameborder="0"
+                  id="star"
+                  title="ClassStar code"
+                ></iframe>
+              </div>
+              <div class="wrap2">
                 <iframe
                   src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
                   scrolling="no"
@@ -124,29 +138,26 @@
           </div>
           <div class="buttons">
             <a id="code"><h2>Coding</h2></a>
-            <button id="btn1" onclick="getCali()">
+            <button id="btn1" onclick="getTracker()">
+              JS Behavior Tracker
+            </button>
+            <button id="btn2" onclick="getCali()">
               JS Character Animation
             </button>
-            <button id="btn2" onclick="getBloom()">JS Game</button>
-            <button id="btn3" onclick="getTrains()">CSS Animation</button>
+            <button id="btn3" onclick="getBloom()">JS Game</button>
+            <button id="btn4" onclick="getTrains()">CSS Animation</button>
           </div>
         </div>
         <div class="descriptions">
-          <h5 id="disclaimer">**To activate frame, select from menu**</h5>
-          <h3 id="code_h3">Mp1: Caliente</h3>
-          <h5 id="code_h5">(Click to animate)</h5>
+          <h3 id="code_h3">ClassStar</h3>
+          <h5 id="code_h5">(Interact with the app)</h5>
           <p id="code_p">
-            This is Cali...she's a bit of a hot head. Witness the magic of
-            character creation through pure JavaScript elements. No images, just
-            several lines of code create the character, Cali, and the
-            destruction she leaves in her wake. Every detail is meticulously
-            crafted using code.
+            A friend of mine mentioned that as a peer mentor, they have to keep track of their student's behaviors. They asked me if that was something I could code. This code allows a user to create a roster of students and a list of behaviors. There's a discrete button mode for moving around the classroom and importing/exporting of excel files to keep track of data over time.
           </p>
           <ul class="page_link">
-            <li>
+            <li id="code_link">
               <a
-                id="code_link"
-                href="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
+                href="https://elle-art.github.io/ClassStar/"
                 target="_blank"
                 >Open in browser</a
               >
@@ -161,7 +172,7 @@
             <h4 id="design_h4">Interactive App Mockup - Honors Contract</h4>
             <p id="designP">
               Join the Bonfire! This app unifies communities by highlighting
-              local buisnesses offering free and low-cost resources. Through
+              local businesses offering free and low-cost resources. Through
               Adobe XD, you can interact with this mockup as if the app was
               downloaded on your phone.
             </p>

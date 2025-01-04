@@ -117,7 +117,7 @@ ul li a:hover {
 }
 
 main {
-  padding: 40px;
+  padding: 40px !important;
   margin: 0px;
   grid-column: span 9;
   font-family: century-gothic, sans-serif;
@@ -129,11 +129,10 @@ main {
 }
 
 main h2 {
-  border-bottom: 4px solid #5a5a5a;
-  font-family: century-gothic, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: mixta-didone, serif;
+  font-weight: 900;
   color: #5a5a5a;
+  font-size: 80px;
 }
 
 main img {
@@ -142,6 +141,11 @@ main img {
 
 #text {
   text-align: justify;
+}
+
+video {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media (min-width: 450px) {
@@ -270,7 +274,7 @@ main img {
   }
 
   .circle {
-    margin-left: 5%;
+    margin-left: -2%;
   }
 
   #text {
