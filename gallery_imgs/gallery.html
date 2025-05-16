@@ -1,0 +1,490 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elle's Gallery</title>
+    <link href="css/gallerypage.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dtp4yrl.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/zbw7mrm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="carousel.js"></script>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <ul>
+            <a class="nav-item" href="welcpage.html"
+              ><img src="logo_new.png" alt="Elle's Gallery"
+            /></a>
+            <li class="nav-item"><a href="about.html">About Me</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <script>
+          // Example initialization code
+          document.addEventListener("DOMContentLoaded", function () {
+            // Initialize
+            var button = document.getElementById("jump-btn");
+            button.addEventListener("click", toggleClass);
+          });
+        </script>
+
+        <!--hidden menu-->
+        <div class="hiddenMenu">
+          <button id="jump-btn"></button>
+          <div id="innerHidden">
+            <h4>Jump to:</h4>
+            <ul>
+              <li><a href="#code">Code</a></li>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#audio">Audio</a></li>
+              <li><a href="#crafts">Crafts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="code_display">
+          <div id="c_frames">
+            <img
+              class="frameC"
+              src="gallery_imgs/code_frame.png"
+              alt="Golden frame"
+            />
+            <div class="wrap2" id="wrapCali">
+              <iframe
+                src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
+                scrolling="no"
+                frameborder="0"
+                id="cali"
+                title="Cali JS code"
+              ></iframe>
+            </div>
+            <div class="wrap2" id="wrapBloom">
+              <svg width="700" height="800">
+                <rect width="700" height="400" style="fill: #afdaed" />
+              </svg>
+              <iframe
+                src="https://elle-art.github.io/CTK302/Unit3/mp3/index.html"
+                scrolling="no"
+                frameborder="0"
+                id="bloom"
+                title="bloom JS code"
+              ></iframe>
+            </div>
+            <div class="wrap2">
+              <iframe
+                src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
+                frameborder="0"
+                id="default"
+                title="trains CSS animation"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <a id="code"><h2>Code</h2></a>
+            <button id="btn1" onclick="getCali()">
+              JS Character Animation
+            </button>
+            <button id="btn2" onclick="getBloom()">JS Game</button>
+            <button id="btn3" onclick="getTrains()">CSS Animation</button>
+          </div>
+        </div>
+        <div class="descriptions">
+          <div id="description1">
+            <h3>Mp1: Caliente</h3>
+            <p>
+              This is Cali...she's a bit of a hot head
+              <i>(click on the image to animate)</i>. Witness the magic of
+              character creation through pure JavaScript elements. No images,
+              just severallines of code orchestrating the character and scene
+              design. Every detail, from facial expressions to clothing, is
+              meticulously crafted using the language of the web.
+            </p>
+          </div>
+          <div id="description2">
+            <h3>Mp3: Bloom</h3>
+            <p>
+              Bloom into a JavaScript gaming experience! Collect water droplets
+              to nurture the flower atop your character's head. Hand-drawn
+              assets, including characters and water droplets, add an authentic
+              charm, each drawn with Sharpie on notebook paper, creating a
+              uniquely personalized aesthetic.
+            </p>
+          </div>
+          <div id="description3">
+            <h3>CSS Animation: Trains</h3>
+            <p>
+              Explore the benefits of public tranpotation while CSS animations
+              craft a visually compelling experience. The GIFs, sourced from the
+              web, dictated the project's color scheme, influincing vibrancy and
+              futuristic themes. Notable features include a hover-triggered
+              animated pie chart that visually represents key data and a timed
+              animation at the bottom <i>(reload page to see)</i>, offering an
+              engaging user experience. This project not only demonstrates the
+              power of CSS animations, but also serves as a platform to promote
+              public transportation through an aesthetically pleasing and
+              interactive lens.
+            </p>
+          </div>
+        </div>
+
+        <div id="design_display">
+          <div class="design_desc">
+            <a id="design"><h2>Design</h2></a>
+            <div id="d1_desc">
+              <h3>Welcome Week Banner</h3>
+              <p>
+                As part of my job with the School of IT at ISU, I made this
+                Facebook banner for Welcome Week 2023. Designed to capture the
+                essence of campus life, it serves as a visual gateway to a week
+                filled with excitement, collaboration, and the spirit of ISU.
+                Let the banner set the tone for a great start to a new school
+                year!
+              </p>
+            </div>
+            <div id="d2_desc">
+              <h3>Recruitment Postcards</h3>
+              <p>
+                As part of my job with the School of IT at ISU, I design_desc
+                impactful mockups for recruitment postcards. These visual
+                representations not only encapsulate the proud moments for the
+                School of IT but also serve as compelling invitations to
+                prospective students.
+              </p>
+            </div>
+            <div id="d3_desc">
+              <h3>RSOs Story Highlights</h3>
+              <p>
+                Expanding the visibility of our amazing RSOs, I've curated
+                Instagram story highlights for each club. I included essential
+                details like club names, weekly meeting times, locations, and
+                contact information, these highlights serve as quick access to
+                our student organizations. Each design is a thoughtful fusion of
+                information and aesthetics, ensuring that students not only stay
+                informed but are also enticed to engage with the IT community.
+              </p>
+            </div>
+            <div id="d4_desc">
+              <h3>Lyric Analysis</h3>
+              <p>
+                In my Race, Power, and Hip-Hop honors exploration, I conducted a
+                lyrical analysis of 'Drew Barrymore' by SZA. This insightful
+                examination delves into the song's profound themes and
+                narratives. Furthermore, my design efforts sought to encapsulate
+                the essence of the CTRL album art, creating a visual
+                representation that echoes the raw emotion and introspection
+                embedded in the music. This project stands as a multidimensional
+                exploration, intertwining the worlds of music, design, and
+                societal reflections.
+              </p>
+            </div>
+          </div>
+          <div class="design_imgs">
+            <img
+              src="gallery_imgs/design/banner_frame.png"
+              id="d1"
+              alt="ISU Facebook Banner"
+            />
+            <img
+              src="gallery_imgs/design/postcard_frame.png"
+              id="d2"
+              alt="ISU Postcard designs"
+            />
+            <img
+              src="gallery_imgs/design/rsos_frame.png"
+              id="d3"
+              alt="ISU RSO Flyer Designs"
+            />
+            <img
+              src="gallery_imgs/design/sza_frame.png"
+              id="d4"
+              alt="SZA Lyric Analysis"
+            />
+
+            <div class="navigation-button">
+              <span
+                class="dot"
+                id="dot1"
+                onclick="get('dot1', 'd2', 'd3', 'd4', 'd1')"
+              ></span>
+              <span
+                class="dot"
+                id="dot2"
+                onclick="get('dot2', 'd1', 'd3', 'd4', 'd2')"
+              ></span>
+              <span
+                class="dot"
+                id="dot3"
+                onclick="get('dot3', 'd2', 'd1', 'd4', 'd3')"
+              ></span>
+              <span
+                class="dot"
+                id="dot4"
+                onclick="get('dot4', 'd2', 'd3', 'd1', 'd4')"
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_display">
+          <a id="video"><h2>Video</h2></a>
+          <div id="clay_wrapper">
+            <iframe
+              src="gallery_imgs/video/grave_frame.mp4"
+              width="500px"
+              height="345"
+              frameborder="0"
+              title="Gravyard Claymation"
+            ></iframe>
+            <div id="clay_desc">
+              <h3>Eternal Reverie</h3>
+              <p>
+                In the haunting beauty of this narrative, discover the love and
+                memories that persist beyond the confines of mortality. This
+                enchanting journey, with its unique blend of claymation
+                artistry, explores enduring connections with loved ones when the
+                lines between the living and departed are beautifully blurred.
+              </p>
+            </div>
+          </div>
+          <div id="cutout_wrapper">
+            <iframe
+              src="gallery_imgs/video/desert_frame.mp4"
+              width="345px"
+              height="345"
+              frameborder="0"
+              title="Desert Cutout Animation"
+            ></iframe>
+            <div id="final_desc">
+              <h3>The Mirage</h3>
+              <p>
+                As a man traverses a desert, he is tormented by illusions.
+                Desperate for hydration, he dives into a rainbow ocean, only to
+                drown. The expedition mirrors the trials of life, with the
+                mirages serving as symbols of misleading aspirations. The fatal
+                pursuit serves as a cautionary tale, highlighting the crucial
+                importance of discernment in navigating our ambitions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="audio_display">
+          <a id="audio"><h2>Audio</h2></a>
+          <script>
+            let audio = new Audio("gallery_imgs/audio/recomp.mp3");
+
+            function playRecomp() {
+              if (!audio.paused) {
+                audio.pause();
+              } else {
+                audio.play();
+              }
+            }
+            function startOverRecomp() {
+              audio.load();
+              audio.play();
+            }
+          </script>
+
+          <input
+            type="image"
+            src="gallery_imgs/audio_tablet.png"
+            class="tablet1"
+            alt="Stone tablet with play symbol"
+            onclick="playRecomp()"
+            ondblclick="startOverRecomp()"
+          />
+          <img
+            src="gallery_imgs/pedestal.png"
+            class="pedestal1"
+            alt="Stone pedestal"
+          />
+          <div class="descriptionA">
+            <h3>Recomposition</h3>
+            <p>
+              Explore a concise reinterpretation of "Hellfire" by The Tracies.
+              In this recomposition project, I had to reduce the essence of the
+              original five-minute track into a two-minute rendition.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=ZRk_NuNG9oo"
+                  target="_blank"
+                  >Listen to orignal song</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            let audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
+
+            function playSFX() {
+              if (!audio2.paused) {
+                audio2.pause();
+              } else {
+                audio2.play();
+              }
+            }
+              function startOverSFX() {
+              audio2.load();
+              audio2.play();
+            }
+            
+          </script>
+
+          <input
+            type="image"
+            src="gallery_imgs/audio_tablet.png"
+            class="tablet2"
+            alt="Stone tablet with play symbol"
+            onclick="playSFX()"
+            ondblclick="startOverSFX()"
+          />
+          <img
+            src="gallery_imgs/pedestal.png"
+            class="pedestal2"
+            alt="Stone pedestal"
+          />
+          <div class="descriptionB">
+            <h3>SFX Narrative</h3>
+            <p>
+              My SFX narrative tells the story of a night out without a single
+              spoken word, relying solely on the power of sound effects.
+              Experience the anticipation at the club entrance, the vibrant
+              energy of the dance floor, and the subtle nuances of each
+              environment.
+            </p>
+          </div>
+        </div>
+
+        <script>
+          // Example initialization code
+          document.addEventListener("DOMContentLoaded", function () {
+            // Initialize your carousel here
+            var carouselElm = document.querySelector(".carousel");
+            new HoverCarousel(carouselElm);
+          });
+        </script>
+
+        <a id="crafts"><h2>Crafts</h2></a>
+        <div class="carousel">
+          <div class="wrap">
+            <ul>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/tarot_frame.png"
+                  class="card_img"
+                  alt="Hand drawn tarot cards"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/trash_frame.png"
+                  class="trash_img"
+                  alt="Painted trash can"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/shelf_frame.png"
+                  class="shelf_img"
+                  alt="Painted skeleton shelf"
+                />
+                <img
+                  src="gallery_imgs/crafts/pooltray_frame.png"
+                  class="pool_img"
+                  alt="Retro pool clay tray"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/room_frame.png"
+                  class="room_img"
+                  alt="Corner of room with mirror and shelf"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/plant_frame.png"
+                  class="pot_img"
+                  alt="Painted plant pot"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/lamps_frame.png"
+                  class="lamps_img"
+                  alt="Groovy mushroom lamps"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/pumpkins_frame.png"
+                  class="kins_img"
+                  alt="Painted pumpkins"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/mtray_frame.png"
+                  class="rest_img"
+                  alt="Mushroom clay tray"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/pb_frame.png"
+                  class="pb_img"
+                  alt="Best of Times playbill"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/cover_frame.png"
+                  class="cover_img"
+                  alt="Powerpuff girl style characters"
+                />
+              </li>
+              <li>
+                <img
+                  src="gallery_imgs/crafts/sc_frame.png"
+                  class="sc_img"
+                  alt="Tie-dyed band shirts"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
