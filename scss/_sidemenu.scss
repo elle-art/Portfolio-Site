@@ -1,0 +1,67 @@
+// not currently used in gallerypage.html (commented out)
+
+.hiddenMenu {
+  position: fixed;
+  z-index: 100;
+  background-color: #92be8a;
+  font-family: $font-title;
+  font-weight: 900 !important;
+  font-style: normal;
+  color: #000000;
+  font-size: 20px !important;
+  width: 200px;
+  height: 50%;
+  border-radius: 9%;
+  top: 200px;
+  left: -100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    left: 80px;
+  }
+
+  ul {
+    margin-left: -25px;
+    list-style-type: none;
+
+    li {
+      a {
+        transition: width 1s, color 1s;
+        color: #e4e7e4;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $color-nav;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#innerHidden {
+  width: 100%;
+  margin: 3% auto;
+  text-align: center;
+}
+
+#jump-btn {
+  position: absolute;
+  left: 55%;
+  background-color: #92be8a;
+  padding: 9px 15px;
+  border-radius: 9%;
+  border: 0px;
+  margin: 50px 41%;
+  height: 15%;
+}
+button:hover {
+  box-shadow: initial;
+}
+
+.hidden {
+  left: 80px;
+  z-index: 100;
+}
