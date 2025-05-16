@@ -157,28 +157,52 @@ button.addEventListener("click", toggleClass);
 function setBtn(btn) {
   document.getElementById(btn).style.backgroundColor = "#625c51";
 
+  if (btn == "btnA") {
+    document.getElementById("btn1").style.backgroundColor = "#867d6e";
+    document.getElementById("btn2").style.backgroundColor = "#867d6e";
+    document.getElementById("btn3").style.backgroundColor = "#867d6e";
+    document.getElementById("btn4").style.backgroundColor = "#867d6e";
+    document.getElementById("btnB").style.backgroundColor = "#867d6e";
+    setParagraphs("btnA");
+  }
+  if (btn == "btnB") {
+    document.getElementById("btn1").style.backgroundColor = "#867d6e";
+    document.getElementById("btn2").style.backgroundColor = "#867d6e";
+    document.getElementById("btn3").style.backgroundColor = "#867d6e";
+    document.getElementById("btn4").style.backgroundColor = "#867d6e";
+    document.getElementById("btnA").style.backgroundColor = "#867d6e";
+    setParagraphs("btnB");
+  }
   if (btn == "btn1") {
     document.getElementById("btn2").style.backgroundColor = "#867d6e";
     document.getElementById("btn3").style.backgroundColor = "#867d6e";
     document.getElementById("btn4").style.backgroundColor = "#867d6e";
+    document.getElementById("btnA").style.backgroundColor = "#867d6e";
+    document.getElementById("btnB").style.backgroundColor = "#867d6e";
     setParagraphs("btn1");
   }
   if (btn == "btn2") {
     document.getElementById("btn1").style.backgroundColor = "#867d6e";
     document.getElementById("btn3").style.backgroundColor = "#867d6e";
     document.getElementById("btn4").style.backgroundColor = "#867d6e";
+    document.getElementById("btnA").style.backgroundColor = "#867d6e";
+    document.getElementById("btnB").style.backgroundColor = "#867d6e";
     setParagraphs("btn2");
   }
   if (btn == "btn3") {
     document.getElementById("btn2").style.backgroundColor = "#867d6e";
     document.getElementById("btn1").style.backgroundColor = "#867d6e";
     document.getElementById("btn4").style.backgroundColor = "#867d6e";
+    document.getElementById("btnA").style.backgroundColor = "#867d6e";
+    document.getElementById("btnB").style.backgroundColor = "#867d6e";
     setParagraphs("btn3");
   }
   if (btn == "btn4") {
     document.getElementById("btn2").style.backgroundColor = "#867d6e";
     document.getElementById("btn1").style.backgroundColor = "#867d6e";
     document.getElementById("btn3").style.backgroundColor = "#867d6e";
+    document.getElementById("btnA").style.backgroundColor = "#867d6e";
+    document.getElementById("btnB").style.backgroundColor = "#867d6e";
     setParagraphs("btn4");
   }
 
@@ -229,8 +253,55 @@ function setCodeFrame(frame) {
 }
 
 function setParagraphs(btn) {
-  let link = document.querySelector("#code_link");
+  let link = document.querySelector("#code_link a");
+  // Remove any existing button container
+  const existingBtnContainer = document.getElementById("cas-collab-btns");
+  if (existingBtnContainer) {
+    existingBtnContainer.remove();
+  }
 
+  if (btn == "btnA") {
+    document.getElementById("code_h3").innerText = "Greetings 101";
+    document.getElementById("code_h5").innerText = "(Play the demo video)";
+    document.getElementById("code_p").innerText =
+      "Greetings 101 is a web-based application designed to help users learn and practice greetings in various languages. Click the link below to explore this project in more detail.";
+    link.href = "about.html#current";
+  }
+
+  if (btn == "btnB") {
+    document.getElementById("code_h3").innerText = "CAS Collaboration System";
+    document.getElementById("code_h5").innerText = "(View page in browser)";
+    document.getElementById("code_p").innerText =
+      "I had the privilege of redesigning the College of Arts and Sciences Collaboration System at ISU. This web-based application is facilitates collaboration among students, faculty, and staff, allowing users to search for professors and explore their research interests. I also designed the Syllabi Database for CAS, which can be viewed through the button below. ";
+
+    link.href = "https://casit.illinoisstate.edu/collaboration-dev";
+
+    // Add buttons for viewing an image and a web page
+    const btnContainer = document.createElement("div");
+    btnContainer.id = "cas-collab-btns";
+    btnContainer.style.marginTop = "10px";
+
+    // Image button
+    const imgBtn = document.createElement("button");
+    imgBtn.innerText = "View Previous Design";
+    imgBtn.onclick = function () {
+      window.open("gallery_imgs/code/Previous_Col_Sys.png", "_blank");
+    };
+    btnContainer.appendChild(imgBtn);
+
+    // Web page button
+    const syllabiBtn = document.createElement("button");
+    syllabiBtn.innerText = "Open CAS Syllabi Database Page";
+    syllabiBtn.style.marginLeft = "8px";
+    syllabiBtn.onclick = function () {
+      window.open("https://casit.illinoisstate.edu/syllabi", "_blank");
+    };
+    btnContainer.appendChild(syllabiBtn);
+
+    // Insert the buttons after the paragraph
+    const codeP = document.getElementById("code_p");
+    codeP.parentNode.insertBefore(btnContainer, codeP.nextSibling);
+  }
   if (btn == "btn1") {
     document.getElementById("code_h3").innerText = "ClassStar";
     document.getElementById("code_h5").innerText = "(Interact with the app)";
@@ -242,7 +313,7 @@ function setParagraphs(btn) {
     document.getElementById("code_h3").innerText = "Mp1: Caliente";
     document.getElementById("code_h5").innerText = "(Click to animate)";
     document.getElementById("code_p").innerText =
-      "This is Cali...she's a bit of a hot head. Witness the magic of character creation through pure JavaScript elements. No images, just several lines of code create the character, Cali, and the destruction she leaves in her wake. Every detail is meticulously crafted using code.";
+      "This is Cali...she's a bit of a hot head. No images, just several lines of code create the character, Cali, and the destruction she leaves in her wake. Every detail is meticulously crafted using JavaScript code.";
     link.href = "https://elle-art.github.io/CTK302/Unit1/mp1/index.html";
   }
   if (btn == "btn3") {
@@ -250,14 +321,14 @@ function setParagraphs(btn) {
     document.getElementById("code_h5").innerText =
       "(Use left and right arrow keys to move)";
     document.getElementById("code_p").innerText =
-      "Bloom into a JavaScript gaming experience! Collect water droplets to nurture the flower atop your character's head. Hand-drawn assets, including characters and water droplets, add an authentic charm, each drawn with Sharpie on notebook paper, creating a uniquely personalized aesthetic.";
+      "Bloom into a JavaScript gaming experience! Collect water droplets to grow the flower atop your character's head. Hand-drawn assets, each drawn with Sharpie on notebook paper, add an authentic charm, creating a uniquely personalized aesthetic.";
     link.href = "https://elle-art.github.io/CTK302/Unit3/mp3/index.html";
   }
   if (btn == "btn4") {
     document.getElementById("code_h3").innerText = "CSS Animation: Trains";
     document.getElementById("code_h5").innerText = "(Scroll and hover)";
     document.getElementById("code_p").innerText =
-      "Explore the benefits of public transportation while CSS animations craft a visually compelling experience. The GIFs, sourced from the web, influenced the vibrant and futuristic color scheme. Notable features include a hover-triggered animated pie chart that represents key data and a timed animation at the bottom, offering an engaging user experience. This project not only demonstrates the power of CSS animations but also promotes public transportation through an aesthetically pleasing and interactive lens.";
+      "Explore the benefits of public transportation though CSS animations! The GIFs, sourced from the web, influenced the vibrant and futuristic color scheme. Notable features include a hover-triggered animated pie chart that represents key data and a timed animation at the bottom, all to promote public transportation through an aesthetically pleasing and interactive lens.";
     link.href =
       "https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html";
   }
@@ -267,14 +338,14 @@ function setParagraphs(btn) {
     document.getElementById("design_h4").innerText =
       "Interactive App Mockup - Honors Contract";
     document.getElementById("designP").innerText =
-      "Join the Bonfire! This app unifies communities by highlighting local businesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself";
+      "Join the Bonfire! This app unifies communities by highlighting local businesses offering free and low-cost resources. Through Adobe XD, you can interact with this mockup as if the app was downloaded on your phone. Explore it for yourself! ";
   }
   if (btn == "dot2") {
     document.getElementById("design_h3").innerText = "Plantfolio";
     document.getElementById("design_h4").innerText =
       "Landing Page - Composition and Design";
     document.getElementById("designP").innerText =
-      "Learn all about plants with Plantfolio, a plant encyclopedia! This captivating landing page, designed in Adobe InDesign, offers a glimpse into a user-friendly and visually appealing platform for exploring the wonderous world of plants.";
+      "Learn all about plants with Plantfolio, a plant encyclopedia! This captivating landing page, designed in Adobe InDesign, offers a glimpse into a user-friendly and visually appealing platform for exploring the wondrous world of plants.";
   }
   if (btn == "dot3") {
     document.getElementById("design_h3").innerText = "Welcome Week 2023";
@@ -324,11 +395,39 @@ function get(btn) {
   setImages(btn);
 }
 
+function getGreetings() {
+  setBtn("btnA");
+  hideCodeElements("wrapBloom");
+  hideCodeElements("train");
+  hideCodeElements("cali");
+  hideCodeElements("star");
+  hideCodeElements("collab");
+  setCodeFrame("greet");
+}
+
+var button = document.getElementById("btnA");
+button.addEventListener("click", getGreetings);
+
+function getCollab() {
+  setBtn("btnB");
+  hideCodeElements("wrapBloom");
+  hideCodeElements("train");
+  hideCodeElements("cali");
+  hideCodeElements("star");
+  hideCodeElements("greet");
+  setCodeFrame("collab");
+}
+
+var button = document.getElementById("btnB");
+button.addEventListener("click", getCollab);
+
 function getTracker() {
   setBtn("btn1");
   hideCodeElements("wrapBloom");
   hideCodeElements("train");
   hideCodeElements("cali");
+  hideCodeElements("greet");
+  hideCodeElements("collab");
   setCodeFrame("star");
 }
 
@@ -340,6 +439,8 @@ function getCali() {
   hideCodeElements("wrapBloom");
   hideCodeElements("train");
   hideCodeElements("star");
+  hideCodeElements("greet");
+  hideCodeElements("collab");
   setCodeFrame("cali");
 }
 
@@ -351,6 +452,8 @@ function getBloom() {
   hideCodeElements("star");
   hideCodeElements("cali");
   hideCodeElements("train");
+  hideCodeElements("greet");
+  hideCodeElements("collab");
   setCodeFrame("bloom");
 }
 
@@ -362,6 +465,8 @@ function getTrains() {
   hideCodeElements("star");
   hideCodeElements("cali");
   hideCodeElements("bloom");
+  hideCodeElements("greet");
+  hideCodeElements("collab");
   setCodeFrame("train");
 }
 

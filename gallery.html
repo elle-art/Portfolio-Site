@@ -111,95 +111,235 @@
         </div> -->
 
         <!-- code -->
-            <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12 col-md-7">
-                    <div id="code_display">
-                      <div id="c_frames">
-                        <img
-                          class="frameC"
-                          src="gallery_imgs/code_frame.png"
-                          alt="Golden frame"
+        <div class="col-12 mt-3">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <div id="code_display">
+                <div id="c_frames">
+                  <img
+                    class="frameC"
+                    src="gallery_imgs/code_frame.png"
+                    alt="Golden frame"
+                  />
+                  <div id="fixedFrame">
+                    <div class="wrap2" id="greetings101">
+                      <video id="greet" controls >
+                        <source
+                          src="greetings_demos/greetings101-flashcards.mp4"
+                          type="video/mp4"
                         />
-                        <div id="fixedFrame">
-                          <div class="wrap2" id="classStar">
-                            <iframe
-                              src="https://elle-art.github.io/ClassStar/"
-                              scrolling="no"
-                              frameborder="0"
-                              id="star"
-                              title="ClassStar code"
-                            ></iframe>
-                          </div>
-                          <div class="wrap2">
-                            <iframe
-                              src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
-                              scrolling="no"
-                              frameborder="0"
-                              id="cali"
-                              title="Cali JS code"
-                            ></iframe>
-                          </div>
-                          <div class="wrap2" id="wrapBloom">
-                            <iframe
-                              src="https://elle-art.github.io/CTK302/Unit3/mp3/index.html"
-                              scrolling="no"
-                              frameborder="0"
-                              id="bloom"
-                              title="bloom JS code"
-                            ></iframe>
-                          </div>
-                          <div class="wrap2">
-                            <iframe
-                              src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
-                              frameborder="0"
-                              id="train"
-                              title="trains CSS animation"
-                            ></iframe>
-                          </div>
-                        </div>
-                      </div>
+                      </video>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-5">
-                    <div class="buttons">
-                      <a id="code"><h2>Coding</h2></a>
-                      <button id="btn1" onclick="getTracker()">
-                        JS Behavior Tracker
-                      </button>
-                      <button id="btn2" onclick="getCali()">
-                        JS Character Animation
-                      </button>
-                      <button id="btn3" onclick="getBloom()">JS Game</button>
-                      <button id="btn4" onclick="getTrains()">
-                        CSS Animation
-                      </button>
+                    <div class="wrap2" id="colllaboration">
+                      <img
+                        id="collab"
+                        src="gallery_imgs/code/Sys.png"
+                        alt="CAS Collaboration System landing page"
+                      />
+                    </div>
+                    <div class="wrap2" id="classStar">
+                      <iframe
+                        src="https://elle-art.github.io/ClassStar/"
+                        scrolling="no"
+                        frameborder="0"
+                        id="star"
+                        title="ClassStar code"
+                      ></iframe>
+                    </div>
+                    <div class="wrap2">
+                      <iframe
+                        src="https://elle-art.github.io/CTK302/Unit1/mp1/index.html"
+                        scrolling="no"
+                        frameborder="0"
+                        id="cali"
+                        title="Cali JS code"
+                      ></iframe>
+                    </div>
+                    <div class="wrap2" id="wrapBloom">
+                      <iframe
+                        src="https://elle-art.github.io/CTK302/Unit3/mp3/index.html"
+                        scrolling="no"
+                        frameborder="0"
+                        id="bloom"
+                        title="bloom JS code"
+                      ></iframe>
+                    </div>
+                    <div class="wrap2">
+                      <iframe
+                        src="https://elle-art.github.io/CTK303/Assignment2/CSSanimation.html"
+                        frameborder="0"
+                        id="train"
+                        title="trains CSS animation"
+                      ></iframe>
                     </div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="descriptions">
-                    <div class="col-12">
-                      <h3 id="code_h3">ClassStar</h3>
-                      <h5 id="code_h5">(Interact with the app)</h5>
-                      <p id="code_p">
-                        A friend of mine mentioned that as a peer mentor, they
-                        have to keep track of their student's behaviors. They
-                        asked me if that was something I could code. This code
-                        allows a user to create a roster of students and a list
-                        of behaviors. There's a discrete button mode for moving
-                        around the classroom and importing/exporting of excel
-                        files to keep track of data over time.
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="buttons">
+                <a id="code"><h2>Coding</h2></a>
+                <button id="btnA" onclick="getGreetings()">Greetings 101</button>
+                <button id="btnB" onclick="getCollab()">
+                  CAS Collaboration System
+                </button>
+                <button id="btn1" onclick="getTracker()">
+                  JS Behavior Tracker
+                </button>
+                <button id="btn2" onclick="getCali()">
+                  JS Character Animation
+                </button>
+                <button id="btn3" onclick="getBloom()">JS Game</button>
+                <button id="btn4" onclick="getTrains()">CSS Animation</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="descriptions">
+              <div class="col-12">
+                <h3 id="code_h3">ClassStar</h3>
+                <h5 id="code_h5">(Interact with the app)</h5>
+                <p id="code_p">
+                  A friend of mine mentioned that as a peer mentor, they have to
+                  keep track of their student's behaviors. They asked me if that
+                  was something I could code. This code allows a user to create
+                  a roster of students and a list of behaviors. There's a
+                  discrete button mode for moving around the classroom and
+                  importing/exporting of excel files to keep track of data over
+                  time.
+                </p>
+              </div>
+              <div class="col-12">
+                <ul class="page_link">
+                  <li id="code_link">
+                    <a
+                      href="https://elle-art.github.io/ClassStar/"
+                      target="_blank"
+                      >Open in browser</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- design -->
+        <div class="col-12 mt-3">
+          <div id="design_display">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="design_desc">
+                  <a id="design"><h2>Design</h2></a>
+                  <h3 id="design_h3">Bonfire</h3>
+                  <h4 id="design_h4">
+                    Interactive App Mockup - Honors Contract
+                  </h4>
+                  <p id="designP">
+                    Join the Bonfire! This app unifies communities by
+                    highlighting local businesses offering free and low-cost
+                    resources. Through Adobe XD, you can interact with this
+                    mockup as if the app was downloaded on your phone.
+                  </p>
+
+                  <ul class="page_link">
+                    <li>
+                      <a
+                        id="bonfire_link"
+                        href="https://xd.adobe.com/view/cbbada60-2f54-4054-ab31-a2f2438b3603-9ee9/"
+                        target="_blank"
+                        >Open in browser</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="design_imgs">
+                  <img
+                    id="design_img"
+                    src="gallery_imgs/design/bonfire_frame.png"
+                    alt="Bonfire app home page"
+                  />
+                  <video id="bonfire_video" controls autoplay>
+                    <source
+                      src="gallery_imgs/design/bonfire_video.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div class="navigation-button">
+                    <span class="dot" id="dot1" onclick="get('dot1')"></span>
+                    <span class="dot" id="dot2" onclick="get('dot2')"></span>
+                    <span class="dot" id="dot3" onclick="get('dot3')"></span>
+                    <span class="dot" id="dot4" onclick="get('dot4')"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- audio -->
+        <div class="col-12 mt-3">
+          <div class="audio_display">
+            <div class="row">
+              <a id="audio"><h2>Audio</h2></a>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <!-- audio1 -->
+                <script>
+                  let audio = new Audio("gallery_imgs/audio/recomp.mp3");
+                  audio.load();
+
+                  function playRecomp() {
+                    if (!audio.paused) {
+                      audio.pause();
+                    } else {
+                      audio.play();
+                    }
+                  }
+                  function startOverRecomp() {
+                    audio.load();
+                    audio.play();
+                  }
+
+                  jQuery(window).on("load", function () {
+                    audioPlay();
+                    ballSeek();
+                  });
+                </script>
+                <div class="row">
+                  <div class="col-9 col-sm-3 col-lg-4">
+                    <input
+                      type="image"
+                      src="gallery_imgs/audio_tablet.png"
+                      class="tablet1"
+                      alt="Stone tablet with play symbol"
+                      title="Double click to play from start"
+                      onclick="playRecomp()"
+                      ondblclick="startOverRecomp()"
+                    />
+                    <img
+                      src="gallery_imgs/pedestal.png"
+                      class="pedestal1"
+                      alt="Stone pedestal"
+                    />
+                  </div>
+                  <div class="col-3 col-sm-9 col-lg-8">
+                    <div class="descriptionA">
+                      <h3>Recomposition</h3>
+                      <p>
+                        Explore a concise reinterpretation of "Hellfire" by The
+                        Tracies. In this recomposition project, I had to reduce
+                        the essence of the original five-minute track into a
+                        two-minute rendition.
                       </p>
-                    </div>
-                    <div class="col-12">
                       <ul class="page_link">
-                        <li id="code_link">
+                        <li>
                           <a
-                            href="https://elle-art.github.io/ClassStar/"
+                            href="https://www.youtube.com/watch?v=ZRk_NuNG9oo"
                             target="_blank"
-                            >Open in browser</a
+                            >Listen to orignal song</a
                           >
                         </li>
                       </ul>
@@ -207,208 +347,62 @@
                   </div>
                 </div>
               </div>
-            </div>
-        <!-- design -->
-            <div class="row">
-              <div class="col-12">
-                <div id="design_display">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="design_desc">
-                        <a id="design"><h2>Design</h2></a>
-                        <h3 id="design_h3">Bonfire</h3>
-                        <h4 id="design_h4">
-                          Interactive App Mockup - Honors Contract
-                        </h4>
-                        <p id="designP">
-                          Join the Bonfire! This app unifies communities by
-                          highlighting local businesses offering free and
-                          low-cost resources. Through Adobe XD, you can interact
-                          with this mockup as if the app was downloaded on your
-                          phone.
-                        </p>
 
-                        <ul class="page_link">
-                          <li>
-                            <a
-                              id="bonfire_link"
-                              href="https://xd.adobe.com/view/cbbada60-2f54-4054-ab31-a2f2438b3603-9ee9/"
-                              target="_blank"
-                              >Open in browser</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="design_imgs">
-                        <img
-                          id="design_img"
-                          src="gallery_imgs/design/bonfire_frame.png"
-                          alt="Bonfire app home page"
-                        />
-                        <video id="bonfire_video" controls autoplay>
-                          <source
-                            src="gallery_imgs/design/bonfire_video.mp4"
-                            type="video/mp4"
-                          />
-                        </video>
-                        <div class="navigation-button">
-                          <span
-                            class="dot"
-                            id="dot1"
-                            onclick="get('dot1')"
-                          ></span>
-                          <span
-                            class="dot"
-                            id="dot2"
-                            onclick="get('dot2')"
-                          ></span>
-                          <span
-                            class="dot"
-                            id="dot3"
-                            onclick="get('dot3')"
-                          ></span>
-                          <span
-                            class="dot"
-                            id="dot4"
-                            onclick="get('dot4')"
-                          ></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <!-- audio -->
-        <div class="row">
-          <div class="col-12">
-            <div class="audio_display">
-              <div class="row">
-                <a id="audio"><h2>Audio</h2></a>
-              </div>
+              <div class="col-12 col-lg-6">
+                <!-- audio2 -->
+                <script>
+                  audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
+                  audio2.load();
 
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <!-- audio1 -->
-                  <script>
-                    let audio = new Audio("gallery_imgs/audio/recomp.mp3");
-                    audio.load();
-
-                    function playRecomp() {
-                      if (!audio.paused) {
-                        audio.pause();
-                      } else {
-                        audio.play();
-                      }
-                    }
-                    function startOverRecomp() {
-                      audio.load();
-                      audio.play();
-                    }
-
-                    jQuery(window).on("load", function () {
-                      audioPlay();
-                      ballSeek();
-                    });
-                  </script>
-                  <div class="row">
-                    <div class="col-9 col-sm-3 col-lg-4">
-                      <input
-                        type="image"
-                        src="gallery_imgs/audio_tablet.png"
-                        class="tablet1"
-                        alt="Stone tablet with play symbol"
-                        title="Double click to play from start"
-                        onclick="playRecomp()"
-                        ondblclick="startOverRecomp()"
-                      />
-                      <img
-                        src="gallery_imgs/pedestal.png"
-                        class="pedestal1"
-                        alt="Stone pedestal"
-                      />
-                    </div>
-                    <div class="col-3 col-sm-9 col-lg-8">
-                      <div class="descriptionA">
-                        <h3>Recomposition</h3>
-                        <p>
-                          Explore a concise reinterpretation of "Hellfire" by
-                          The Tracies. In this recomposition project, I had to
-                          reduce the essence of the original five-minute track
-                          into a two-minute rendition.
-                        </p>
-                        <ul class="page_link">
-                          <li>
-                            <a
-                              href="https://www.youtube.com/watch?v=ZRk_NuNG9oo"
-                              target="_blank"
-                              >Listen to orignal song</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                  <!-- audio2 -->
-                  <script>
-                    audio2 = new Audio("gallery_imgs/audio/sfx.mp3");
-                    audio2.load();
-
-                    function playSFX() {
-                      if (!audio2.paused) {
-                        audio2.pause();
-                      } else {
-                        audio2.play();
-                        audioPlay("audio2");
-                      }
-                    }
-                    function startOverSFX() {
-                      audio2.load();
+                  function playSFX() {
+                    if (!audio2.paused) {
+                      audio2.pause();
+                    } else {
                       audio2.play();
+                      audioPlay("audio2");
                     }
-                  </script>
-                  <div class="row">
-                    <div class="col-9 col-sm-3 col-lg-4">
-                      <input
-                        type="image"
-                        src="gallery_imgs/audio_tablet.png"
-                        class="tablet2"
-                        alt="Stone tablet with play symbol"
-                        title="Double click to play from start"
-                        onclick="playSFX()"
-                        ondblclick="startOverSFX()"
-                      />
-                      <img
-                        src="gallery_imgs/pedestal.png"
-                        class="pedestal2"
-                        alt="Stone pedestal"
-                      />
+                  }
+                  function startOverSFX() {
+                    audio2.load();
+                    audio2.play();
+                  }
+                </script>
+                <div class="row">
+                  <div class="col-9 col-sm-3 col-lg-4">
+                    <input
+                      type="image"
+                      src="gallery_imgs/audio_tablet.png"
+                      class="tablet2"
+                      alt="Stone tablet with play symbol"
+                      title="Double click to play from start"
+                      onclick="playSFX()"
+                      ondblclick="startOverSFX()"
+                    />
+                    <img
+                      src="gallery_imgs/pedestal.png"
+                      class="pedestal2"
+                      alt="Stone pedestal"
+                    />
+                  </div>
+                  <div class="col-3 col-sm-9 col-lg-8">
+                    <div class="descriptionB">
+                      <h3>SFX Narrative</h3>
+                      <p>
+                        My SFX narrative tells the story of a night out without
+                        a single spoken word, relying solely on the power of
+                        sound effects. Experience the anticipation at the club
+                        entrance, the vibrant energy of the dance floor, and the
+                        subtle nuances of each environment.
+                      </p>
                     </div>
-                    <div class="col-3 col-sm-9 col-lg-8">
-                      <div class="descriptionB">
-                        <h3>SFX Narrative</h3>
-                        <p>
-                          My SFX narrative tells the story of a night out
-                          without a single spoken word, relying solely on the
-                          power of sound effects. Experience the anticipation at
-                          the club entrance, the vibrant energy of the dance
-                          floor, and the subtle nuances of each environment.
-                        </p>
-                      </div>
-                      <div class="h-500"></div>
-                    </div>
+                    <div class="h-500"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+        <!-- crafts -->
         <script>
           // Example initialization code
           document.addEventListener("DOMContentLoaded", function () {
@@ -494,7 +488,7 @@
                 <img
                   src="gallery_imgs/crafts/cover_frame.png"
                   class="cover_img"
-                  alt="Powerpuff girl style characters"
+                  alt="PowerPuff girl style characters"
                 />
               </li>
               <li>
