@@ -96,11 +96,11 @@
   transition: 0.25s ease-out;
 }
 
-.carousel > .wrap > ul > li:first-child {
+.carousel > .wrap > ul > li:first-child > a {
   margin: 0;
 }
 
-.carousel > .wrap > ul > li > img {
+.carousel > .wrap > ul > li > a > img {
   display: block;
   height: auto;
   margin: auto;
